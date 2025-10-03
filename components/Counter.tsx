@@ -9,7 +9,10 @@ export default function Counter () {
     }
 
     useEffect(()=> {
-        alert("Voce pressionou o botão!")
+       // alert("Voce pressionou o botão!")
+        if (quantity===5){
+            console.log("Contador atingiu o meio do caminho!")
+        }
     },[quantity])
 
  return (
